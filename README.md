@@ -13,7 +13,7 @@ After installing, you can add a 'WMQSI > WebsphereMessageBroker' infrastructure 
 
 ## Resources
 
-Built and tested using the Vagrant box @ https://drive.google.com/file/d/0Bw7dX-1Go6FTUVZlMGgxd1RZblU/view?usp=sharing, example Vagrantfile https://drive.google.com/file/d/0Bw7dX-1Go6FTY0FLaUdNOF9oZzg/view?usp=sharing.The box boots with a gui on IP 192.168.2.10. You can use the UI and run /home/vagrant/iib-10.0.0.0/iib toolkit
+Built and tested using the [Vagrant box](https://drive.google.com/file/d/0Bw7dX-1Go6FTUVZlMGgxd1RZblU/view?usp=sharing), example [Vagrantfile](https://drive.google.com/file/d/0Bw7dX-1Go6FTY0FLaUdNOF9oZzg/view?usp=sharing). The box boots with a gui on IP 192.168.2.10. You can use the UI and run /home/vagrant/iib-10.0.0.0/iib toolkit
 
 ## TODO
 
