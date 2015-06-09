@@ -10,12 +10,16 @@
         <generate-deployable type="wmqsi.BarFile" extends="udm.BaseDeployableArchiveArtifact" />
 		<property name="createScript" default="${deployed.container.updateScript}" hidden="true"/>
 		<property name="modifyScript" default="${deployed.container.updateScript}" hidden="true" />
-		<property name="destroyScript" default="${deployed.container.updateScript}" hidden="true"/>
+		<property name="destroyScript" default="${deployed.container.destroyScript}" hidden="true"/>
 		<property name="noopScript" default="${deployed.container.updateScript}" hidden="true"/>   
     </type>
 
     <type type="wmqsi.WebsphereMessageBroker" extends="generic.Container" description="WebsphereMessageBroker definition">
         <property name="updateScript" hidden="true" default="iib/deployBAR" />
+        <property name="destroyScript" hidden="true" default="iib/undeployBAR" />
+        <property name="serverDir" default="/home/vagrant/iib-10.0.0.0/server/" />
+        <property name="integrationNodeName" default="TESTNODE_vagrant" />
+        <property name="integrationServerName" default="default" />
     </type>
 
 </synthetic>
