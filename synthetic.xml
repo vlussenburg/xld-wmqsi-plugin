@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS
+    FOR A PARTICULAR PURPOSE. THIS CODE AND INFORMATION ARE NOT SUPPORTED BY XEBIALABS.
+-->
+<synthetic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.xebialabs.com/deployit/synthetic" xsi:schemaLocation="http://www.xebialabs.com/deployit/synthetic synthetic.xsd">
+
+    <type type="wmqsi.DeployedBarFile" extends="generic.ExecutedScriptWithDerivedArtifact" deployable-type="wmqsi.BarFile" container-type="wmqsi.WebsphereMessageBroker" description="Executed WebsphereMessageBroker BAR deployment">
+        <generate-deployable type="wmqsi.BarFile" extends="udm.BaseDeployableArchiveArtifact" />
+		<property name="createScript" default="${deployed.container.updateScript}" hidden="true"/>
+		<property name="modifyScript" default="${deployed.container.updateScript}" hidden="true" />
+		<property name="destroyScript" default="${deployed.container.updateScript}" hidden="true"/>
+		<property name="noopScript" default="${deployed.container.updateScript}" hidden="true"/>   
+    </type>
+
+    <type type="wmqsi.WebsphereMessageBroker" extends="generic.Container" description="WebsphereMessageBroker definition">
+        <property name="updateScript" hidden="true" default="iib/deployBAR" />
+    </type>
+
+</synthetic>
